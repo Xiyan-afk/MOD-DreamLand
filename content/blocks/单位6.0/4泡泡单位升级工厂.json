@@ -1,0 +1,26 @@
+{
+	"type": "Reconstructor",
+	"name": "T4泡泡聚变台",
+	"description": "建造时间大幅度减少",
+    "health":480,
+	"size":7,
+	"consumes":{
+		"power":100
+	},
+	"upgrades":[
+		["zenith","antumbra"],
+        ["spiroct","arkyid"],
+        ["fortress","scepter"],
+        ["bryde","sei"],
+        ["mega","quad"],
+        ["quasar","vela"],
+        ["cyerce","aegires"]
+    ],
+	"constructTime":240,
+	"requirements": [{"item": "泡泡", "amount": 1600}
+	{"item":"钢化泡泡","amount":1000}
+	{"item":"泡泡水晶","amount":600}],
+	"category":"units",
+	"buildVisibility":"shown",
+	"research":"3泡泡单位升级工厂"
+}

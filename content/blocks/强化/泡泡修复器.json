@@ -1,0 +1,32 @@
+{
+	"name": "泡泡修复器",
+	"description": "敢戳破我的泡泡",
+	"type": "MendProjector",
+	"health": 320,
+	"size": 1,
+	"range": 120,
+	"reload": 90,
+	"healPercent": 9,
+	"consumes": {
+		"power": 8.0,
+        "items":{
+			"items":[
+				{"item":"泡泡","amount":1}
+			]
+			"booster":true
+			"optional": true
+		}
+	},
+	"requirements": [
+        { "item": "泡泡", "amount": 150 },
+	],
+	"category": "effect",
+	"research":"泡泡制造机",
+	"alwaysUnlocked":true
+	"baseColor":"ffccff",
+	"phaseColor":"ffccff"
+	"phaseRangeBoost":80
+	"phaseBoost":2
+	"lightColor":"ffccff"
+	
+}

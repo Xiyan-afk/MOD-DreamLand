@@ -1,0 +1,227 @@
+{    "chargeTime" : 240,
+    "chargeBeginEffect": {
+    "type": "ParticleEffect",
+    "particles": 8,
+    "sizeFrom": 40,
+    "sizeTo": 2,
+    "length": 90,
+		"baseLength": -90,
+    "lifetime": 60,
+    "colorFrom": "FFFFFFFF",
+    "colorTo": "FFFFFFFF",
+    "cone": 360
+},
+	"chargeEffect": {
+	    "type": "MultiEffect",
+	    "lifetime": 60,
+	    "effects": [
+	    	{     
+    "type": "ParticleEffect",
+    "region": "fhsn-汇聚",
+    "particles": 30,
+    "sizeFrom": 10,
+    "sizeTo": 40,
+    "length": -720,
+    "baseLength": 720,
+    "spin": 10,
+    "lifetime": 240,
+    "colorFrom": "000000",
+    "colorTo": "000000",
+    "cone": 100
+	   }
+	   {     
+    "type": "ParticleEffect",
+    "region": "fhsn-汇聚",
+    "particles": 20,
+    "sizeFrom": 10,
+    "sizeTo": 40,
+    "length": -720,
+    "baseLength": 720,
+    "spin": -10,
+    "lifetime": 240,
+    "colorFrom": "ffffff",
+    "colorTo": "ffffff",
+    "cone": 80
+	   }
+	   {     
+    "type": "ParticleEffect",
+    "region": "fhsn-星",
+    "particles": 20,
+    "sizeFrom": 10,
+    "sizeTo": 40,
+    "length": 180,
+    "baseLength": -180,
+    "lifetime": 240,
+    "spin": -10,
+		"layer": 109,
+    "colorFrom": "000000",
+    "colorTo": "000000",
+    "cone": 360
+	   }
+	   {     
+    "type": "ParticleEffect",
+    "region": "fhsn-星",
+    "particles": 20,
+    "sizeFrom": 10,
+    "sizeTo": 40,
+    "length": 180,
+    "baseLength": -180,
+    "lifetime": 240,
+    "spin": 10,
+		"layer": 109,
+    "colorFrom": "ffffffff",
+    "colorTo": "FFFFFFFF",
+    "cone": 360
+	   }
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 240,
+        "sizeFrom": 240,
+        "sizeTo":100,
+        "strokeFrom": 6,
+        "strokeTo": 2,
+        "sides":4
+            "rotation":0
+        "colorFrom": "000000",
+        "colorTo": "ffffffff"
+	   },
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 240,
+        "sizeFrom": 240,
+        "sizeTo":100,
+        "strokeFrom": 6,
+        "strokeTo": 2,
+        "sides":4
+            "rotation":45
+        "colorFrom": "FFFFFFFF",
+        "colorTo": "ffffffff"
+	   },
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 240,
+        "sizeFrom": 320,
+        "sizeTo":140,
+        "strokeFrom": 6,
+        "strokeTo": 2,
+        "sides":8
+            "rotation":0
+        "colorFrom": "000000",
+        "colorTo": "ffffffff"
+	   },
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 240,
+        "sizeFrom": 280,
+        "sizeTo":140,
+        "strokeFrom": 6,
+        "strokeTo": 2,
+        "sides":8
+            "rotation":20
+        "colorFrom": "FFFFFFFF",
+        "colorTo": "ffffffff"
+	   },
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 240,
+        "sizeFrom": 60,
+        "sizeTo":60,
+        "strokeFrom": 6,
+        "strokeTo": 2,
+        "sides":3
+            "rotation":20
+        "colorFrom": "FFFFFFFF",
+        "colorTo": "ffffffff"
+	   },{     
+        "type": "WaveEffect",
+        "lifetime": 240,
+        "sizeFrom": 60,
+        "sizeTo":60,
+        "strokeFrom": 6,
+        "strokeTo": 2,
+        "sides":3
+            "rotation":40
+        "colorFrom": "FFFFFFFF",
+        "colorTo": "ffffffff"
+	   },
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 240,
+        "sizeFrom": 60,
+        "sizeTo":60,
+        "strokeFrom": 6,
+        "strokeTo": 2,
+        "sides":3
+            "rotation":60
+        "colorFrom": "FFFFFFFF",
+        "colorTo": "ffffffff"
+	   },
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 240,
+        "sizeFrom": 60,
+        "sizeTo":60,
+        "strokeFrom": 6,
+        "strokeTo": 2,
+        "sides":3
+            "rotation":80
+        "colorFrom": "FFFFFFFF",
+        "colorTo": "ffffffff"
+	   },
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 240,
+        "sizeFrom": 60,
+        "sizeTo":60,
+        "strokeFrom": 6,
+        "strokeTo": 2,
+        "sides":3
+            "rotation":100
+        "colorFrom": "FFFFFFFF",
+        "colorTo": "ffffffff"
+	   },
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 240,
+        "sizeFrom": 60,
+        "sizeTo":60,
+        "strokeFrom": 6,
+        "strokeTo": 2,
+        "sides":3
+            "rotation":120
+        "colorFrom": "FFFFFFFF",
+        "colorTo": "ffffffff"
+	   },
+	   {     
+    "type": "ParticleEffect",
+    "region": "fhsn-星",
+    "particles": 1,
+    "sizeFrom": 80,
+    "sizeTo": 80,
+    "length": 0,
+    "baseLength": 0,
+    "lifetime": 240,
+    "spin": -4,
+		"layer": 109,
+    "colorFrom": "ffffffff",
+    "colorTo": "FFFFFFFF",
+    "cone": 360
+	   }
+	   {     
+    "type": "ParticleEffect",
+    "region": "fhsn-星",
+    "particles": 1,
+    "sizeFrom": 80,
+    "sizeTo": 80,
+    "length": 0,
+    "baseLength": 0,
+    "lifetime": 240,
+    "spin": 4,
+		"layer": 109,
+    "colorFrom": "000000",
+    "colorTo": "000000",
+    "cone": 360
+	   }
+	   ]
+	}
+},

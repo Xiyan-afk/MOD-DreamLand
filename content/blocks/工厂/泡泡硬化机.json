@@ -1,0 +1,32 @@
+{
+	"type": "GenericCrafter",
+	"name": "泡泡钢化机",
+	"description": "压缩泡泡",
+	"outputItem": { "item": "钢化泡泡", "amount": 1},
+	"size": 2,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 1,
+	"updateEffect": "smeltsmoke",
+	"consumes": {
+	         "power":4
+             "items": {
+			 "items": [
+				{ "item": "泡泡", "amount": 4 }
+			]
+  },
+ },
+	"requirements": [
+		{ "item": "泡泡", "amount": 150 }
+		{ "item":"copper","amount": 200 }
+		{ "item":"plastanium","amount": 40 },
+	],
+	"category": "crafting",
+	"research": "泡泡制造机",
+	"idleSound": "respawning",
+	"idleSoundVolume": 1.25
+     "alwaysUnlocked":true
+     "flameColor":"ffccff",
+     "lightColor":"ffccff",
+}

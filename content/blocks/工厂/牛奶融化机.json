@@ -1,0 +1,40 @@
+{
+  "type":"GenericCrafter",
+  "name":"牛奶融化机",
+  "description":"",
+  "health":260,
+  "liquidCapacity":500,
+  "itemCapacity":500,
+  "size":2,
+  "hasPower":true,
+  "hasLiquids":true,
+  "hasItems":true,
+  "craftTime":1,
+  "consumes":{
+    "power":3,
+    "items":{
+      "items":[
+      {"item":"牛奶结晶","amount":2}
+      ],
+    }
+    },
+  "outputLiquid":{"liquid":"牛奶","amount":9.65},
+  "requirements":[
+  {"item":"copper","amount":60}
+  {"item":"lead","amount":80}
+  {"item":"titanium","amount":60}
+  
+  ],
+  "category":"crafting",
+  "research":"泡泡制造机",
+  "rebuildable":true,
+  "insulated":true,
+  "baseExplosiveness":10000,
+  "flameColor":"ffccff",
+  "canOverdrive":true,
+  "targetable":true,
+  "breakSound":"fire",
+  "solid":true,
+  "buildCostMultiplier":1,
+  "lightColor":"ffccff"
+}

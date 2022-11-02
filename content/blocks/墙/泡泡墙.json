@@ -1,0 +1,17 @@
+{
+	"name": "泡泡墙",
+	"description": "咕噜噜",
+	"type": "Wall",
+	"health": 2800,
+	"size": 1,
+	"flashHit":true
+  "flashColor":"#ffccff"
+  "absorbLasers":true
+	"requirements": [
+		{ "item": "泡泡", "amount": 20 }
+	],
+	"category": "defense",
+	"research": "泡泡制造机"
+	"buildCostMultiplier":0.04
+	"alwaysUnlocked": true,
+}

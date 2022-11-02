@@ -1,0 +1,28 @@
+{
+  "type":"Conduit",
+  "name":"泡泡导管",
+  "description":"泡泡可以是固体，也可以是液体，甚至气体",
+  "health":50,
+  "outputsLiquid":true,
+  "floating":true
+  "liquidCapacity":100,
+  "size":1,
+  "hasLiquids":true,
+  "leakResistance":1,
+  "floating":true,
+  "drawLiquidLight":true,
+  "requirements":[
+  {"item":"copper","amount":1}
+   {"item":"metaglass","amount":1}
+    {"item":"lead","amount":1}
+  ],
+  "category":"liquid",
+  "research":"泡泡制造机",
+  "rebuildable":true,
+  "baseExplosiveness":10000,
+  "targetable":true,
+  "breakSound":"fire",
+  "solid":true,
+  "buildCostMultiplier":0.00000001,
+  "alwaysUnlocked": true,
+}

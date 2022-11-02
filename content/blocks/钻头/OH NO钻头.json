@@ -1,0 +1,29 @@
+{
+	"type":"Drill",
+	"name": "OH NO钻机",
+	"description": "OH NO",
+	"size":2,
+	"health":80.0,
+	"hasPower":false,
+	"drawMineItem":true,
+	"drillTime":60,
+	"hasItems":true,
+	"warmupSpeed":4.99,
+	"tier":3,
+	"hasLiquids":true,
+	"liquidBoostIntensity":2.56,
+	"itemCapacity":50,
+	"liquidCapacity":30,
+	"consumes":{
+         "liquid":{"liquid": "water","amount":0.015,   	
+	    "booster": true,
+    	"optional": true,
+    	}
+    }
+	"requirements": [
+		{"item": "copper", "amount":40}
+	],
+	"category": "production",
+    "research":"泡泡制造机"
+    "alwaysUnlocked": true,
+}

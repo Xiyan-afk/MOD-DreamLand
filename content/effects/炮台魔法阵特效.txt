@@ -1,0 +1,174 @@
+"drawer":{
+"type":"DrawTurret",
+"parts":[
+{
+    "type":"ShapePart",//前/外圆/圈
+    "progress":0.9,
+    "color":"#51A3CC",
+    "circle":true,
+    "hollow":true,
+    "stroke":0,
+    "strokeTo":1.6,
+    "radius":11,
+    "layer":110,
+    "y":20,
+    
+}
+
+{
+    "type":"ShapePart",//前/外圈/方形
+    "progress":0.9,
+    "rotateSpeed":-0.75,
+    "color":"#E6B82E",
+    "sides":6,
+    "hollow":true,
+    "stroke":0,
+    "strokeTo":1.6,
+    "radius":8,
+    "layer":110,
+    "y":20,
+    
+}
+{
+    "type":"ShapePart",//前/内圈/方形
+    "progress":0.9,
+    "rotateSpeed":0.75,
+    "color":"#E6B82E",
+    "sides":6,
+    "hollow":true,
+    "stroke":0,
+    "strokeTo":2,
+    "radius":3,
+    "layer":110,
+    "y":20,
+    
+}
+{
+    "type":"HaloPart",//前/三角形
+    "progress":0.9,
+    "color":"#51A3CC",
+    "tri":true,
+    "shapes":3,
+    "triLength":0,
+    "triLengthTo":5,
+    "radius":6,
+    "haloRadius":11,
+    "haloRotateSpeed":0.75,
+    "shapeRotation":180,
+    "haloRotation":180,
+    "layer":110,"y":20,
+    
+}
+{
+    "type":"HaloPart",///后/外/三角形
+    "progress":0.9,
+    "color":"#51A3CC",
+    "tri":true,
+    "shapes":3,
+    "triLength":0,
+    "triLengthTo":10,
+    "radius":6,
+    "haloRadius":16,
+    "haloRotation":180,
+    "layer":110,
+    "y":-15,
+    
+}
+
+    {
+        "type":"HaloPart",//后/内/三角形
+    "progress":0.9,
+    "color":"#51A3CC",
+    "tri":true,
+    "shapes":3,
+    "triLength":0,
+    "triLengthTo":3,
+    "radius":6,
+    "haloRadius":16,
+    "shapeRotation":180,
+    "haloRotation":180,
+    "layer":110,
+    "y":-15,
+    }
+    
+    {
+    "type":"HaloPart",//后/内圈/内/实三角形
+    "progress":0.9,
+    "color":"#51A3CC",
+    "sides":3,
+    "tri":true,
+    "shapes":3,
+    "triLength":0,
+    "triLengthTo":10,
+    "shapeRotation":180,
+    "radius":6,
+    "haloRadius":16,
+    "haloRotateSpeed":-1.5,
+    "haloRotation":60,
+    "layer":110,
+    "y":-15,
+    }
+    
+    {
+    "type":"HaloPart",//后/内圈/外/实三角形
+    "progress":0.9,
+    "color":"#51A3CC",
+    "sides":3,
+    "tri":true,
+    "shapes":3,
+    "triLength":0,
+    "triLengthTo":4,
+    "radius":6,
+    "haloRadius":16,
+    "haloRotateSpeed":-1.5,
+    "haloRotation":60,
+    "layer":110,
+    "y":-15,   
+        
+    }
+
+    {
+    "type":"ShapePart",//后/圆形
+    "progress":0.9,
+    "color":"#51A3CC",
+    "circle":true,
+    "hollow":true,
+    "stroke":0,
+    "strokeTo":2,
+    "radius":10,
+    "layer":110,
+    "y":-15,
+    }
+
+    {
+    "type":"ShapePart",//后/内/三角形
+    "progress":0.9,
+    "color":"#E6B82E",
+    "rotateSpeed":1.5,
+    "sides":6,
+    "rotation":90,
+    "hollow":true,
+    "stroke":0,
+    "strokeTo":2,
+    "radius":4,
+    "layer":110,
+    "y":-15,
+        
+    }
+    
+    {
+    "type":"HaloPart",//后/外圈/空三角形
+    "progress":0.9,
+    "color":"#51A3CC",
+    "sides":3,
+    "shapes":3,
+    "hollow":true,
+    "stroke":0,
+    "strokeTo":2,
+    "radius":3,
+    "haloRadius":15.5,
+    "haloRotateSpeed":1.5,
+    "layer":110,
+    "y":-15,
+    }
+      ]  }

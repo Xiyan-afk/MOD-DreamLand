@@ -1,0 +1,27 @@
+{
+	"type": "Reconstructor",
+	"name": "T5泡泡裂变台",
+	"description": "建造时间大幅度减少",
+    "health":1020,
+	"size":9,
+	"consumes":{
+		"power":120
+	},
+	"upgrades":[
+		["antumbra","eclipse"],
+        ["arkyid","toxopid"],
+        ["scepter","reign"],
+        ["sei","omura"],
+        ["quad","oct"],
+        ["vela","corvus"]
+        ["aegires","navanax"]
+    ],
+	"constructTime":300,
+	"requirements": [{"item": "泡泡", "amount": 3000}
+	{"item":"钢化泡泡","amount":1600}
+	{"item":"泡泡水晶","amount":1000}
+	],
+	"category":"units",
+	"buildVisibility":"shown",
+	"research":"4泡泡单位升级工厂"
+}

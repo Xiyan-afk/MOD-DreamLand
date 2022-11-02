@@ -1,0 +1,89 @@
+{
+    //  加了//的是注释，不会被游戏加载
+    
+    //单位类型 物品工厂
+	"type": "GenericCrafter",
+	
+	//方块名字
+	"name": "咕噜咕噜机",
+	
+	//方块简介
+	"description": "咕噜噜",
+	
+	//输出物品（造出什么东西)
+	"outputItem":{ "item": "泡泡", "amount": 1},
+	
+	//大小 这里是2*2 也就是一个石墨工厂的大小
+	"size": 2,
+	
+	//这些接口好像是老版本的，好像不会被读取
+	//是否用电 false＝不 true＝是
+	"hasPower": false,
+	//是否储存水
+	"hasLiquids": false,
+	//是否储存物品
+	"hasItems": true,
+	
+	//制造时间 60＝1秒
+	"craftTime": 50,
+	
+	//这里是特效部分 是自定义的，所以看不懂很正常     详情见例子特效
+	"updateEffect":[
+	{//铜
+                "type":"WaveEffect",
+                "lifetime":35,
+                "colorFrom":"d99d73",
+                "colorTo":"ffccff",
+                "sizeFrom":0,
+                "sizeTo":10,
+                "strokeFrom":4,
+                "strokeTo":0
+	}
+	{//铅
+                "type":"WaveEffect",
+                "lifetime":35,
+                "colorFrom":"8c7fa9",
+                "colorTo":"ffccff",
+                "sizeFrom":0,
+                "sizeTo":10,
+                "strokeFrom":4,
+                "strokeTo":0
+	}],
+	
+	//消耗品
+	"consumes": {
+	    //消耗电量 1＝60
+	    "power":1.5
+	    //物品
+             "items": {
+			 "items": [
+				{ "item": "lead", "amount": 2 }
+				{ "item":"copper","amount":2}
+			]
+  },
+  
+  //建造消耗物品
+ },
+	"requirements": [
+		{ "item": "copper", "amount": 150 }
+		{ "item": "graphite", "amount": 45 }
+		{ "item": "lead", "amount": 175 },
+	],
+	
+	//菜单位置 这里就是工厂类菜单
+	"category": "crafting",
+	//科技树
+	"research": "core-shard",
+	//忘记了 是个颜色反正
+	"flameColor":"ffccff",
+	//忘记了
+	"idleSound": "respawning",
+	"idleSoundVolume":0.3
+	
+	//在菜单里显示可建造 要不然生存就看不见
+    "alwaysUnlocked":true
+    //发光颜色 好像没用
+    "lightColor":"ffccff"
+    //副标题
+    "details":"非常的反人类"
+}

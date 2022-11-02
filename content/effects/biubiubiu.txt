@@ -1,0 +1,47 @@
+"shootType" : {
+		"type" : "BasicBulletType",
+		"speed": 2,
+		"lifetime" : 360,
+		"damage": 18,
+		"height" : 100,
+		"width" : 100,
+		"hitEffect": "hitLaser",
+		"despawnEffect" : "hitLaser",
+		"pierce": true,
+		"frontColor": "bbdefb",
+		"backColor": "90caf9"
+		"intervalBullets":20,
+		"intervalBullet":{
+            "type":"LaserBulletType"
+              "hitEffect":"hitLancer"
+              "despawnEffect":"none"
+              "length":288
+              "width":24
+              "hitSize":8
+              "lifetime":24
+              "drawSize":400
+              "damage":120
+              "fragBullets": 2,
+		"fragBullet":{
+    "type" : "FlakBulletType",
+	        "damage": 50, 
+            "splashDamageRadius": 40, 
+            "splashDamage": 40,
+            "weaveMag": 5,
+            "weaveScale": 5,
+            "width": 10, 
+            "height": 10, 
+            "speed": 2,
+            "lifetime": 600, 
+            "lightning": 10, 
+            "lightningLength": 50, 
+            "hitEffect": "plasticExplosion",
+            "backColor": "8aa3f4", 
+            "frontColor": "8aa3f4", 
+            "collidesGround": true
+          }
+           }
+		           "intervalRandomSpread":20
+               "intervalAngle" : 270
+                "intervalSpread" : 300
+	},

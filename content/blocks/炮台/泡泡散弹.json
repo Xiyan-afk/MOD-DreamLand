@@ -1,0 +1,166 @@
+{
+     "type":"ItemTurret",
+     "name":"散化", //名字
+     "description":"落下的樱花", //介绍
+     "health":1100,//生命
+     "size":2,//占地边长支持1~9对应贴图1x1=32x32像素.
+     "shotWidth":2,//炮口间距双管使用与体积对应是2:1
+     "targetAir":true,//是否攻击空中true是,false否
+     "targetGround":true,//是否攻击地面true是,false否
+     "rotatespeed":16 ,//旋转速度
+     "cooldown":1,//冷却
+     "recoil":9 ,//后坐力
+     "restitution":1.6,//回复原位速度
+     "shoot": {
+		"type": "ShootBarrel"
+		"shots": 6
+	          }
+     "inaccuracy":10 ,//误差
+     "shootSound":"missile"
+     "maxAmmo":50,//弹仓默认30
+     "burstSpacing":5,//破片炮使用爆裂半径默认5
+     "reload":10,//装弹时间比例60:1
+     "range":140,//范围
+     "ammoTypes": {
+       "泡泡": {
+       "splashDamageRadius":26,//溅射范围
+	   "splashDamage":20,//范围伤害
+	   "speed":5 ,//子弹飞行速度
+	   "sprite":"fhsn-激光子弹"
+	   "backColor":"ffccff",			
+        "frontColor":"ffccff",
+		"heatColor":"ffccff",
+		"trailColor":"ffccff",
+		"damage":20 ,//伤害
+		"hitSize":4 ,//碰撞箱默认4
+		"pierce":0 ,//是否穿透
+		"reloadMultiplier":1 ,//装弹速率
+		"recoil":0 , //额外后坐力
+		"knockback":0 ,//被击中单位降速
+		"bulletWidth":60 ,//子弹宽
+		"bulletHeight":60 ,//子弹高
+		"homingPower":0,//追踪力度0不追1追
+		"homingRange":75,//追踪范围
+		"lifetime":60,//子弹存在时间比例60:1
+		"lightining":1,//闪电数量
+		"lightningLength":3,//闪电长度
+		"lightningDamage":28
+		"incendChance": 0,//产生火焰概率
+		"fragBullets":5,//破片数
+		"fragVelocityMin":1 //破片最小速度
+		"fragVelocityMax":7 //破片最大速度
+		"ammoMultiplier":2 //子弹乘数就是一个物品打几发
+  }//矿物名
+       "钢化泡泡": {
+       "splashDamageRadius":30,//溅射范围
+	   "splashDamage":30,//范围伤害
+	   "speed":7 ,//子弹飞行速度
+	   "sprite":"fhsn-激光子弹"
+	   "backColor":"ffccff",			
+        "frontColor":"ffccff",
+		"heatColor":"ffccff",
+		"trailColor":"ffccff",
+		"damage":30 ,//伤害
+		"hitSize":4 ,//碰撞箱默认4
+		"pierce":0 ,//是否穿透
+		"reloadMultiplier":1.6 ,//装弹速率
+		"recoil":2 , //额外后坐力
+		"knockback":2 ,//被击中单位降速
+		"bulletWidth":60 ,//子弹宽
+		"bulletHeight":60 ,//子弹高
+		"homingPower":0,//追踪力度0不追1追
+		"homingRange":75,//追踪范围
+		"lifetime":60,//子弹存在时间比例60:1
+	    "lightningDamage":45
+		"lightining":4,//闪电数量
+		"lightningLength":4,//闪电长度
+		"incendChance": 0,//产生火焰概率
+		"fragBullets":6,//破片数
+		"fragVelocityMin":6 //破片最小速度
+		"fragVelocityMax":9 //破片最大速度
+		"ammoMultiplier":3 //子弹乘数就是一个物品打几发
+  }//矿物名
+  "copper": {
+       "splashDamageRadius":12,//溅射范围
+	   "splashDamage":3,//范围伤害
+	   "speed":2 ,//子弹飞行速度
+	   "sprite":"fhsn-激光子弹"
+	   "backColor":"ffccff",			
+        "frontColor":"ffccff",
+		"heatColor":"ffccff",
+		"trailColor":"ffccff",
+		"damage":12 ,//伤害
+		"hitSize":4 ,//碰撞箱默认4
+		"pierce":0 ,//是否穿透
+		"reloadMultiplier":1.6 ,//装弹速率
+		"recoil":2 , //额外后坐力
+		"knockback":0 ,//被击中单位降速
+		"bulletWidth":20 ,//子弹宽
+		"bulletHeight":20,//子弹高
+		"homingPower":0,//追踪力度0不追1追
+		"homingRange":0,//追踪范围
+		"lifetime":60,//子弹存在时间比例60:1
+	    "lightningDamage":0
+		"lightining":0,//闪电数量
+		"lightningLength":0,//闪电长度
+		"incendChance": 0,//产生火焰概率
+		"fragBullets":2,//破片数
+		"fragVelocityMin":2 //破片最小速度
+		"fragVelocityMax":2 //破片最大速度
+		"ammoMultiplier":2 //子弹乘数就是一个物品打几发
+  }//矿物名
+  "泡泡水晶": {
+		    "type":"ArtilleryBulletType"
+		    "Sprite":"fhsn-泡泡水晶"
+			"splashDamageRadius": 400,
+			"splashDamage":500,
+			"speed": 15,
+			"damage": 500,
+			"bulletWidth": 16,
+			"bulletHeight": 16,
+			"trailEffect": "burning",
+			"smokeEffect": "lancerLaserShootSmoke",
+			"ammoMultiplier": 20,
+			"hitEffect":"hitBulletBig"
+			"lifetime":2000,
+			"backColor":"ffccff",
+			"fontColor":"ffccff",
+			"heatColor":"ffccff",
+			"trailColor":"ffccff",
+            "homingRange": 24,
+            "homingPower": 20,
+         	"fragBullets":2,
+            "lightningDamage":244,
+        	"lightning":8,
+        	"lightningLength":14,
+        	"lightningColor":"#ffccff"
+         "fragBullet":{
+         "type" : "MissileBulletType",
+			"splashDamageRadius":400,
+			"splashDamage":450,
+         "speed":11,
+         "pierce":false,
+         "lifetime":60,
+         "bulletWidth": 12,
+		"bulletHeight": 20,
+         "damage":450,
+         "backColor":"#ffccff",			
+         "frontColor":"#ffccff",
+         "hitEffect":"shockwave"
+	     "trailColor":"#ffccff"
+            "homingRange": 80,
+            "homingPower": 10,
+            "statusDuration":"75"
+		}
+	}
+},//子弹
+      "requirements": [
+		{ "item": "lead", "amount":50 }
+		{"item":"泡泡","amount":50}
+		{"item":"copper","amount":70}
+		{ "item":"graphite","amount": 45 }
+	],//建造消耗,第一个""之间写矿物,第二个:后写数量
+	"category": "turret",
+	"research": "泡泡制造机"//科技树前一项
+	"alwaysUnlocked": true,
+}

@@ -1,0 +1,15 @@
+{
+	"name":"泡泡容器",
+	"type":"StorageBlock",
+	"description":"把东西装进泡泡里",
+	"itemCapacity":100000000,
+	"hasItems":true,
+	"health":200,
+	"research": "泡泡制造机",
+	"size":3,
+	"requirements": [
+	    { "item": "泡泡", "amount": 125}
+	    {"item": "thorium", "amount": 60 }
+	],
+	"category": "effect"
+}

@@ -1,0 +1,15 @@
+{
+	"type": "Conveyor",
+	"name": "泡泡传送带",
+	"description": "泡泡很脆弱，但是很快",
+	"floating":true
+	"itemCapacity":48
+	"requirements": [
+		{"item": "泡泡", "amount": 2}
+		{ "item":"titanium","amount": 1 },
+	],
+	"category": "distribution",
+ "research": "泡泡制造机",
+	"speed": 0.7
+	"alwaysUnlocked": true,
+}

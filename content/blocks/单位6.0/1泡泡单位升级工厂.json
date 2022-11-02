@@ -1,0 +1,34 @@
+{
+	"type": "UnitFactory",
+	"name": "泡泡组合厂",
+	"description": "所需材料减半，建造时间大幅度减少",
+    "health":160,
+	"size":3,
+	"consumes":{
+		"power":6
+	},
+	"plans":[
+		{
+		"unit": "dagger", 
+		"time": 180, 
+		"requirements": 
+		[{"item": "泡泡", "amount": 60}] 
+		},
+		
+		{ "unit": "crawler", "time": 180, "requirements": [{"item": "泡泡", "amount": 60}] },
+		{ "unit": "nova", "time": 180, "requirements": [{"item": "泡泡", "amount": 60}] },
+		{ "unit": "flare", "time": 180, "requirements": [{"item": "泡泡", "amount": 60}] },
+		{ "unit": "mono", "time": 180, "requirements": [{"item": "泡泡", "amount": 60}] },
+		{ "unit": "risso", "time": 180, "requirements": [{"item": "泡泡", "amount": 60}] }
+		{ "unit": "零蝶矿机", "time": 180, "requirements": [{"item": "泡泡", "amount": 80}] }
+		{ "unit": "retusa", "time": 180, "requirements": [{"item": "泡泡", "amount": 60}] }
+    ],
+	"requirements": [
+	    {"item": "泡泡", "amount": 400}
+	    {"item":"graphite","amount":240}
+	],
+	"category":"units",
+	"buildVisibility":"shown",
+	"research":"泡泡制造机"
+	"alwaysUnlocked": true,
+}

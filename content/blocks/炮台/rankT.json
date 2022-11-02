@@ -1,0 +1,22 @@
+{
+    "name":"[#DE8AFF]破晓",
+    "description":"夜が明ける",
+    "category": "turret",
+    "size":3,
+    "health": 1900,
+    "shootSound": "laser",
+    "heatColor":"#ff0000"
+     "consumes": {
+      "items": {
+     "items": [
+         { "item": "钢化泡泡","amount":1}
+         ]
+   }
+ },
+    "requirements": [
+        { "item": "泡泡","amount": 800 }
+        { "item": "thorium","amount": 150 }
+        { "item": "钢化泡泡","amount": 280 }
+    ],
+    "research": "泡泡制造机"
+}

@@ -1,0 +1,13 @@
+"type": "resource"
+"name":"泡泡糖"
+"description":"嚼不动的糖"
+"radioactivity":6
+"tier":6
+"cost":0.2
+"color":"#ffc1ff"
+"temperature":0
+"heatCapacity":6
+"viscosity":0.1
+"hardness":4
+	"research":"泡泡制造机"
+	"alwaysUnlocked": true,

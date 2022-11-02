@@ -1,0 +1,284 @@
+{
+     "type":"ItemTurret"
+     "name":"袍云"
+     "description":"花里花俏"
+     "health":1600
+     "shotWidth":4.5
+     "size":2
+     "targetAir":true
+     "burstSpacing": 20
+     "targetGround":true
+     "alternate":true
+     "collidesTiles":false
+     "rotateSpeed":99
+     "spread": 100
+     "velocityInaccuracy":10
+     "recoil": 0//后座
+     
+     "shoot": {
+		"type": "ShootBarrel"
+		"shots": 2
+	          }
+	 "shootY":0
+	 "shootX":0
+	          
+     "inaccuracy":360
+     "maxAmmo":50
+     "reload":15
+     "range":340
+     "shootSound":"missile"
+     
+      "drawer":{//动画
+	    "type":"DrawTurret"
+	    "parts":[
+		        {//六边形
+			"type": "HaloPart"
+			"hollow": true//实心
+			"mirror": false//镜像
+			"circle": false//圆
+			"tir":true//行动
+			"x": 0
+			"y": 0
+			"haloRotation": 0//环绕旋转
+			"moveX": 0
+			"moveY": 0
+			"sides": 6//边数量
+			"radius": 16//半径
+			"haloRadius": 0//环绕半径
+			"rotateSpeed": 5//旋转速度
+			"stroke": 3//
+			"color": "ffccff"
+			"colorTo": "ffccff"
+			"layer": 110//层
+		    }
+	        {//小圆
+			"type": "HaloPart"
+			"hollow": false
+			"mirror": false
+			"tri": true
+			"x": 0
+			"y": 0
+			"moveX": 0
+			"moveY": 0
+			"haloMoveRot": 15//环绕移动衰减
+			"shapes":6//形状
+			"sides": 6//边数量
+			"radius": 6//半径
+			"stroke": 2//
+			"haloRadius": 8//环绕半径
+			"haloRotateSpeed": 6//环绕旋转速度
+			"haloRotation": 1//环绕旋转
+			"rotateSpeed": 0//旋转速度
+			"color": "ccccff"
+			"colorTo": "ccccff"
+			"layer": 110
+		    }
+		    {
+        "type":"HaloPart",//内/三角形
+        "progress":0.9,
+        "color":"ffccff",
+        "tri":true,
+        "shapes":3,
+        "triLength":0,
+        "triLengthTo":3,
+        "radius":6,
+        "haloRadius":16,
+        "shapeRotation":180,
+        "haloRotation":180,
+        "layer":110,
+        "y":0
+        "x":0
+}
+	    ]
+	}
+     
+     "ammoTypes": {
+       "牛奶结晶": {
+        "type":"ArtilleryBulletType"
+        "sprite":"fhsn-圆形子弹"
+        "shootEffect":[
+	{//开火特效
+                "type":"WaveEffect"
+                "lifetime":0
+                "colorFrom":"000000"
+                "colorTo":"ccffff"
+                "sizeFrom":0
+                "sizeTo":3
+                "strokeFrom":0
+                "strokeTo":3
+	}
+	{"type": "ParticleEffect",
+    "particles": 3,//特效数量
+    "sizeFrom": 2,//初始大小，8为一格
+    "sizeTo": 0,//结束大小
+    "length": 12,//扩散移动距离，负数会聚集
+    "baseLength":2,//开始时距离中心位置的范围
+    "lifetime": 15,//存在时间
+    "colorFrom": "ccffff",
+    "colorTo": "ffffff",
+    "cone": 360
+	}
+	{"type": "ParticleEffect",
+    "particles": 3,//特效数量
+    "sizeFrom": 4,//初始大小，8为一格
+    "sizeTo": 0,//结束大小
+    "length": 8,//扩散移动距离，负数会聚集
+    "baseLength":4,//开始时距离中心位置的范围
+    "lifetime": 15,//存在时间
+    "colorFrom": "ccffff",
+    "colorTo": "ffffff",
+    "cone": 360
+	    
+	}
+	]
+        "keepVelocity":false
+        "collidesTiles":false
+        "collides":true
+        "collidesAir":true
+	    "bulletShrink":0.5
+	    "speed":0.4
+		"pierce":false
+		"bulletWidth": 6
+		"bulletHeight": 22
+		"lifetime":150
+        "backColor":"ccffff"			
+        "frontColor":"ccffff"
+		"heatColor":"ccffff"
+		"trailColor":"ccffff"
+        "hitShake": 1
+        "splashDamage":40
+        "damage":40
+        "splashDamageRadius":56
+        "ammoMultiplier": 6
+    	"trailEffect": "missileTrail"
+	    "smokeEffect": "unitLand"//
+	    "hitEffect":{
+        "effects": [//特效
+      {
+        "effect": "titanExplosion"
+        "color": "ccffff"
+        "type": "WrapEffect"
+      }
+      ]
+    "type": "MultiEffect"
+      }
+      
+      
+	    "despawnEffect":{
+    "effects": [//特效
+      {
+        "effect": "titanExplosion"
+        "color": "ccffff"
+        "type": "WrapEffect"
+      }
+      ]
+    "type": "MultiEffect"
+      }
+	    "homingPower": 0.06
+        "homingRange": 160
+        "status":"freezing"
+        "statusDuration":"75"
+		}
+		
+		//钢化泡泡
+		
+		
+		"钢化泡泡": {
+        "type":"ArtilleryBulletType"
+        "sprite":"fhsn-圆形子弹"
+        "shootEffect":[
+	{//开火特效
+                "type":"WaveEffect"
+                "lifetime":0
+                "colorFrom":"000000"
+                "colorTo":"ffccff"
+                "sizeFrom":0
+                "sizeTo":3
+                "strokeFrom":0
+                "strokeTo":3
+	}
+	{"type": "ParticleEffect",
+    "particles": 3,//特效数量
+    "sizeFrom": 2,//初始大小，8为一格
+    "sizeTo": 0,//结束大小
+    "length": 12,//扩散移动距离，负数会聚集
+    "baseLength":2,//开始时距离中心位置的范围
+    "lifetime": 15,//存在时间
+    "colorFrom": "ffccff",
+    "colorTo": "ffffff",
+    "cone": 360
+	}
+	{"type": "ParticleEffect",
+    "particles": 3,//特效数量
+    "sizeFrom": 4,//初始大小，8为一格
+    "sizeTo": 0,//结束大小
+    "length": 8,//扩散移动距离，负数会聚集
+    "baseLength":4,//开始时距离中心位置的范围
+    "lifetime": 15,//存在时间
+    "colorFrom": "ffccff",
+    "colorTo": "ffffff",
+    "cone": 360
+	}
+	]
+        "keepVelocity":false
+        "collidesTiles":false
+        "collides":true
+        "collidesAir":true
+	    "bulletShrink":0.5
+	    "speed":0.4
+		"pierce":false
+		"bulletWidth": 6
+		"bulletHeight": 22
+		"lifetime":150
+        "backColor":"ffccff"			
+        "frontColor":"ffccff"
+		"heatColor":"ffccff"
+		"trailColor":"ffccff"
+        "hitShake": 1
+        "splashDamage":45
+        "damage":45
+        "splashDamageRadius":56
+        "ammoMultiplier": 6
+    	"trailEffect": "missileTrail"
+	    "smokeEffect": "unitLand"
+	    "hitEffect":{
+    "effects": [//特效
+      {
+        "effect": "titanExplosion"
+        "color": "ffccff"
+        "type": "WrapEffect"
+      }
+      ]
+    "type": "MultiEffect"
+      }
+      
+	    "despawnEffect":{
+    "effects": [//特效
+      {
+        "effect": "titanExplosion"
+        "color": "ffccff"
+        "type": "WrapEffect"
+      }
+      ]
+    "type": "MultiEffect"
+      }//这
+      
+	    "homingPower": 0.1
+        "homingRange": 160
+        "status":"burning"
+        "statusDuration":"75"
+		}
+		
+	}
+	
+	
+	"requirements": [
+		{ "item": "copper" "amount": 1000 }
+		{ "item": "泡泡" "amount": 400 }
+		{ "item": "lead" "amount": 1000 }
+	]
+	"buildCostMultiplier":0.14
+	"category": "turret"
+	"research": "泡泡制造机"
+	"alwaysUnlocked":true
+}

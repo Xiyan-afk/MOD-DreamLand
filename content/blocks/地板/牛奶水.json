@@ -1,0 +1,18 @@
+{
+  "type":"Floor",
+  "name":"牛奶",
+  "placeableOn":true,
+  "floating":true
+  "variants":1,
+  "speedMultiplier":1,
+  "dragMultiplier":0.2,
+  "damageTaken":0,
+  "drownTime":600,
+  "walkEffect":"ripple",
+  "drownUpdateEffect":"bubble",
+  "status":"wet",
+  "statusDuration":600,
+  "liquidDrop":"牛奶",
+  "isLiquid":true,
+  "attributes":{"array":[1000,100,200,300]},
+}

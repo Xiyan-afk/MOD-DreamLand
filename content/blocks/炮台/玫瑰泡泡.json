@@ -1,0 +1,333 @@
+{
+	"type": "ItemTurret",
+	"name": "[#ffccff]梦幻",
+	"description": "梦境之封印，幻之旅",
+	"targetAir": true,//对空，false=否
+	"targetGround": true,//对地，true=是
+	"health":1900,//炮台生命值
+	"size":3,//炮台的尺寸，1=32*32
+	
+	"shoot": {
+    "type": "ShootAlternate",
+    "shots": 1//发射数
+    "barrels": 3//枪管
+    
+}
+
+	"reload":12,//多久可以发射一发，值越小，发射间隔越短
+	"recoil":16,//后坐力
+	"shootShake":0.625,//射击时抖动频率
+	"shootCone":20,
+	"maxAmmo":50,
+	"rotateSpeed":2.5,//炮台转动瞄准角度的速度
+	"range":310,//射击范围，值越大覆盖范围越大
+	"ammoUseEffect":"fireballsmoke",
+	"smokeEffect":"shootBigSmoke",
+	"shootSound":"激光射击"
+	"lightColor":"ffccff"
+	"shootEffect":"unitLand",//shockwave
+	//"drag":-0.05,
+	"ammoTypes":{
+		"泡泡":{
+			"type":"ArtilleryBulletType"
+			//"pierce": true,
+			"bulletSprite":"fhsn-激光子弹"
+			"damage": 150,//炮弹伤害
+			"speed": 5.0,//炮弹飞行速度
+			"lifetime": 4000,//炮弹飞行时间
+			"frontColor":"#ffccff",
+			"backColor":"#ffccff",
+			"hitEffect":"spawnShockwave",
+			"bulletWidth":7.0,//炮弹宽
+			"bulletHeight":7.0,//炮弹长
+			"trailColor":"#ffccff",//拖尾颜色
+			"reloadMultiplier":1.25,//发射间隔缩短倍数
+			"splashDamage":250,//范围伤害数值
+			"incendChance":0.8,//引发着火的几率（貌似1=100%）
+			"incendAmount":4,//着火的数量
+			"incendSpread":3,//着火传播的距离
+			"fragBullets":6,//爆炸后产生的碎片数量
+			"fragBullet":{//爆炸后产生的碎片种类
+				"type":"ArtilleryBulletType",//BombBulletType
+				"bulletWidth":1,//碎片宽
+				"bulletHeight":1,//碎片长
+				"backColor":"#ffccff",
+				"frontColor":"#ffccff",
+				"despawnEffect":"hitBulletBig",
+				"trailColor":"#ffccff",
+				"smokeEffect":"hitLiquid",
+				"hitEffect":"impactcloud",
+				"collides":true,//碎片发生碰撞，true=是
+				"speed":5.25,//碎片飞行速度
+				"damage":70,//碎片伤害
+				"homingRange":7,
+				"homeningPower":5,
+				"hitEffect":"pulverize",
+				}
+		}
+		"钢化泡泡":{
+			"type":"ArtilleryBulletType"
+			//"pierce": true,
+			"bulletSprite":"fhsn-激光子弹"
+			"damage": 350,//炮弹伤害
+			"speed": 7.0,//炮弹飞行速度
+			"lifetime": 60,//炮弹飞行时间
+			"frontColor":"#ffccff",
+			"backColor":"#ffccff",
+			"hitEffect":"spawnShockwave",
+			"bulletWidth":10.0,//炮弹宽
+			"bulletHeight":10.0,//炮弹长
+			"trailColor":"#ffccff",//拖尾颜色
+			"reloadMultiplier":1.25,//发射间隔缩短倍数
+			"splashDamage":350,//范围伤害数值
+			"incendChance":0.6,//引发着火的几率（貌似1=100%）
+			"incendAmount":5,//着火的数量
+			"incendSpread":1,//着火传播的距离
+			"lightining":6,
+			"lightningLength":12,
+			"lightningDamage":260
+			"fragBullets":12,//爆炸后产生的碎片数量
+			"fragBullet":{//爆炸后产生的碎片种类
+				"type":"ArtilleryBulletType",//BombBulletType
+				"bulletWidth":1,//碎片宽
+				"bulletHeight":1,//碎片长
+				"backColor":"#ffccff",
+				"frontColor":"#ffccff",
+				"despawnEffect":"hitBulletBig",
+				"trailColor":"#ffccff",
+				"smokeEffect":"hitLiquid",
+				"hitEffect":"impactcloud",
+				"collides":true,//碎片发生碰撞，true=是
+				"status":"freezing"
+				"speed":6,//碎片飞行速度
+				"damage":75,//碎片伤害
+				"homingRange":1,
+				"homeningPower":1,
+				"hitEffect":"pulverize",
+				"homingPower":8
+				}
+		}
+		"牛奶结晶": {
+        "type":"ArtilleryBulletType",
+        "Sprite":"missile",
+        "keepVelocity":false,
+        "collidesTiles":false,
+        "collides":true,
+        "collidesAir":true,
+	    "bulletShrink":0.5,
+	    "speed":8,
+		"pierce":false,
+		"bulletWidth": 6,
+		"bulletHeight": 22,
+		"lifetime":150,
+        "backColor":"ccffff",			
+        "frontColor":"ccffff",
+		"heatColor":"ccffff",
+		"trailColor":"ccffff",
+        "hitShake": 1,
+        "splashDamage":55,
+        "damage":255,
+        "splashDamageRadius":10,
+        "ammoMultiplier": 6,
+    	"trailEffect": "missileTrail",
+	    "smokeEffect": "lightningShoot",//
+	    "hitEffect":"hitLancer",
+	    "homingPower": 1,
+        "homingRange": 2
+        "status":"freezing"
+        "statusDuration":"75"
+        "fragBullets":6,//爆炸后产生的碎片数量
+			"fragBullet":{//爆炸后产生的碎片种类
+				"type":"ArtilleryBulletType",//BombBulletType
+				"bulletWidth":1,//碎片宽
+				"bulletHeight":1,//碎片长
+				"backColor":"#ccffff",
+				"frontColor":"#ccffff",
+				"despawnEffect":"hitBulletBig",
+				"trailColor":"#ccffff",
+				"smokeEffect":"hitLiquid",
+				"hitEffect":"impactcloud",
+				"collides":true,//碎片发生碰撞，true=是
+				"speed":6,//碎片飞行速度
+				"damage":90,//碎片伤害
+				"homingRange":0,
+				"homeningPower":0,
+				"hitEffect":"pulverize",
+		}
+    }
+	"泡泡水晶": {
+		    "type":"ArtilleryBulletType"
+		    "Sprite":"fhsn-泡泡水晶"
+			"splashDamageRadius": 400,
+			"splashDamage":500,
+			"speed": 15,
+			"damage": 500,
+			"bulletWidth": 16,
+			"bulletHeight": 16,
+			"trailEffect": "burning",
+			"smokeEffect": "lancerLaserShootSmoke",
+			"ammoMultiplier": 20,
+			"hitEffect":"titanExplosion"
+			"lifetime":2000,
+			"backColor":"ffccff",
+			"fontColor":"ffccff",
+			"heatColor":"ffccff",
+			"trailColor":"ffccff",
+            "homingRange": 24,
+            "homingPower": 20,
+         	"fragBullets":2,
+            "lightningDamage":244,
+        	"lightning":8,
+        	"lightningLength":14,
+        	"lightningColor":"#ffccff"
+         "fragBullet":{
+         "type" : "MissileBulletType",
+			"splashDamageRadius":400,
+			"splashDamage":450,
+         "speed":11,
+         "pierce":false,
+         "lifetime":60,
+         "bulletWidth": 12,
+		"bulletHeight": 20,
+         "damage":450,
+         "backColor":"#ffccff",			
+         "frontColor":"#ffccff",
+         "hitEffect":"shockwave"
+	     "trailColor":"#ffccff"
+            "homingRange": 80,
+            "homingPower": 10,
+            "statusDuration":"75"
+		}
+	}
+},
+	"requirements":[
+		{ "item": "钢化泡泡", "amount": 120 }
+		{ "item": "泡泡", "amount": 360 }
+		{ "item": "lead", "amount": 180 }
+		{ "item":"plastanium","amount": 150 }
+	],
+	"research": "泡泡制造机",
+	"category": "turret"
+    //动画	
+    "drawer":
+{
+    "type":"DrawTurret",
+    "parts":
+[
+
+{
+    "type":"HaloPart",///后/外/三角形
+    "progress":0.9,
+    "color":"ffccff",
+    "tri":true,
+    "shapes":3,
+    "triLength":0,
+    "triLengthTo":10,
+    "radius":6,
+    "haloRadius":16,
+    "haloRotation":180,
+    "layer":110,
+    "y":-15,
+    
+}
+
+{
+        "type":"HaloPart",//后/内/三角形
+    "progress":0.9,
+    "color":"ffccff",
+    "tri":true,
+    "shapes":3,
+    "triLength":0,
+    "triLengthTo":3,
+    "radius":6,
+    "haloRadius":16,
+    "shapeRotation":180,
+    "haloRotation":180,
+    "layer":110,
+    "y":-15,
+}
+    
+{
+    "type":"HaloPart",//后/内圈/内/实三角形
+    "progress":0.9,
+    "color":"ffccff",
+    "sides":3,
+    "tri":true,
+    "shapes":3,
+    "triLength":0,
+    "triLengthTo":10,
+    "shapeRotation":180,
+    "radius":6,
+    "haloRadius":16,
+    "haloRotateSpeed":-1.5,
+    "haloRotation":60,
+    "layer":110,
+    "y":-15,
+}
+    
+{
+    "type":"HaloPart",//后/内圈/外/实三角形
+    "progress":0.9,
+    "color":"ffccff",
+    "sides":3,
+    "tri":true,
+    "shapes":3,
+    "triLength":0,
+    "triLengthTo":4,
+    "radius":6,
+    "haloRadius":16,
+    "haloRotateSpeed":-1.5,
+    "haloRotation":60,
+    "layer":110,
+    "y":-15,   
+        
+}
+
+{
+    "type":"ShapePart",//后/圆形
+    "progress":0.9,
+    "color":"ffccff",
+    "circle":true,
+    "hollow":true,
+    "stroke":0,
+    "strokeTo":2,
+    "radius":10,
+    "layer":110,
+    "y":-15,
+}
+
+{
+    "type":"ShapePart",//后/内/三角形
+    "progress":0.9,
+    "color":"ffccff",
+    "rotateSpeed":1.5,
+    "sides":6,
+    "rotation":90,
+    "hollow":true,
+    "stroke":0,
+    "strokeTo":2,
+    "radius":4,
+    "layer":110,
+    "y":-15,
+        
+}
+    
+{
+    "type":"HaloPart",//后/外圈/空三角形
+    "progress":0.9,
+    "color":"ffccff",
+    "sides":3,
+    "shapes":3,
+    "hollow":true,
+    "stroke":0,
+    "strokeTo":2,
+    "radius":3,
+    "haloRadius":15.5,
+    "haloRotateSpeed":1.5,
+    "layer":110,
+    "y":-15,
+}
+]  
+}
+
+}

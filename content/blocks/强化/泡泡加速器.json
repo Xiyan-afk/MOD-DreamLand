@@ -1,0 +1,35 @@
+
+{
+	"name": "泡泡粒子迁跃",
+	"description": "将分子重组，肉眼看不见的速度",
+	"type": "OverdriveProjector",
+	"health": 270,
+	"size": 2,
+	"range": 180,
+	"reload": 50,
+	"speedBoost": 5,
+	"speedBoostPhase":5
+	"phaseRangeBoost":90
+	"consumes": {
+		"power": 2.0,
+        "items":{
+			"items":[
+				{"item":"泡泡","amount":1}
+			]
+			"booster":true
+			"optional": true
+		}
+	},
+	"requirements": [
+		{ "item":"泡泡","amount": 150 }
+		{ "item":"copper","amount": 200 }
+		{ "item":"lead","amount": 200 }
+		{ "item":"plastanium","amount": 60 },
+	],
+	"category":"effect",
+	"research":"泡泡加速器x10",
+	"alwaysUnlocked":true
+	"baseColor":"ffccff"
+	"phaseColor":"ffccff"
+	"lightColor":"ffccff"
+}

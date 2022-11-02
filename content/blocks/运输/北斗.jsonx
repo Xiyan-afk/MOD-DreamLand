@@ -1,0 +1,42 @@
+{
+  "type":"MassDriver",
+  "name":"北斗",
+  "description":"北斗七星为你传送",
+  "health":500,
+  "size":1,
+  "consumes":{
+    "power":1.8,
+  }
+  "requirements":[
+  {"item":"copper","amount":700}
+  {"item":"graphite","amount":300}
+  {"item":"lead","amount":600}
+    {"item":"泡泡","amount":150}
+  
+  ],
+  "category":"distribution",
+  "research":"泡泡制造机",
+  "rebuildable":true,
+  "powerUse":1.8
+  "insulated":true,
+  "baseExplosiveness":0,
+  "targetable":true,
+  "solid":true,
+  "buildCostMultiplier":0.14,
+  "range":380,
+  "rotateSpeed":5,
+  "translation":20,
+  "minDistribute":20,
+  "itemCapacity":160,
+  "knockback":4,
+  "reloadTime":60,
+  "shake":3,
+      "bullet":[
+      "bulletspeed":26
+      "bulletLifetime":5201314
+      "shootEffect":"shootBig2",
+      "smokeEffect":"shootBigSmoke2",
+      "recieveEffect":"mineBig",
+      "breakSound":"fire",
+  ]//127改版的，子弹得扩起来了
+}

@@ -1,0 +1,28 @@
+{
+    "type":"GenericCrafter",
+	"name":"泡泡糖搅拌器",
+	"description":"高温搅拌泡泡糖，凝固成泡泡",
+	"size":2,
+	"outputItem":
+		{"item":"泡泡","amount":3},
+	"consumes":{
+		"items":{
+			"items":[
+				{"item":"泡泡糖","amount":2},
+				]
+			}
+		},
+	"requirements":[
+		{"item":"copper","amount":100},
+		{"item":"lead","amount":125},
+		{ "item":"graphite","amount": 60 }
+		],
+	"craftTime":20,
+	"health":90,
+	"itemCapacity":50,
+	"research":"泡泡制造机",
+	"flameColor":"ffccff",
+	"category":"crafting"
+	"alwaysUnlocked": true,
+	"lightColor":"ffccff"
+}

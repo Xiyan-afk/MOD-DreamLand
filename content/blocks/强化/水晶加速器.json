@@ -1,0 +1,37 @@
+
+{
+	"name": "水晶璃矩绮纬度驱动器",
+	"description": "利用水晶强大的力量，改变纬度",
+	"type": "OverdriveProjector",
+	"health": 1270,
+	"size": 3,
+	"range": 260,
+	"reload": 50,
+	"speedBoost": 12,
+	"speedBoostPhase":18
+	"phaseRangeBoost":120
+	"consumes": {
+		"power": 100,
+        "items":{
+			"items":[
+				{"item":"泡泡水晶","amount":1}
+				{"item": "泡泡", "amount":1 }
+			]
+			"booster":true
+			"optional": true
+		}
+	},
+	"requirements": [
+		{ "item":"泡泡","amount": 1000 }
+		{ "item":"泡泡水晶","amount": 100 }
+		{ "item":"lead","amount": 500 }
+		{ "item":"plastanium","amount": 400 }
+		{"item": "钢化泡泡", "amount":120 },
+	],
+	"category":"effect",
+	"research":"泡泡加速器",
+	"alwaysUnlocked":true
+	"lightColor":"ffccff"
+	"baseColor":"ffccff"
+	"phaseColor":"ffccff"
+}

@@ -1,0 +1,59 @@
+{	//这个XXXEffect可以是任何特效，只要找到对应名称
+	"XXXEffect":{
+	"type": "MultiEffect",
+	"effects": [
+	//已配好的颜色无需更改，颜色对应代码在画图软件里找
+	//这个是烟雾特效
+	{"type": "ParticleEffect",
+    "particles": 12,//特效数量
+    "sizeFrom": 10,//初始大小，8为一格
+    "sizeTo": 0,//结束大小
+    "length": 35,//扩散移动距离，负数会聚集
+    "baseLength": 33,//开始时距离中心位置的范围
+    "lifetime": 35,//存在时间
+    "colorFrom": "开始颜色",
+    "colorTo": "结束颜色",
+    "cone": 360},
+    //这个是条形粒子特效，内容物与上面的相同
+	{"type": "ParticleEffect",
+    "particles": 12,
+    "line":true,//是否长条
+    "sizeFrom": 9,
+    "sizeTo": 0,
+    "length": 43,
+    "baseLength": 23,
+    "lifetime": 22,
+    "colorFrom": "开始颜色",
+    "colorTo": "FFE176FF",
+    "cone": 360},//扩散
+    //这个是波特效
+    {"type": "WaveEffect",
+    "lifetime": 10,
+    "sizeFrom": 1,//开始大小
+    "sizeTo": 18,//结束大小
+    "strokeFrom": 8,//圆的开始粗细，8为一格
+    "strokeTo": 0,//结束时粗细
+    "colorFrom": "FFE176FF",
+    "colorTo": "ffffff"}
+    
+    ]//在这个方括号内可以随意重复堆特效，就看你自己能不能看清
+	    
+	}},
+    //@RA2制作，如有疑问，进群咨询
+    
+	"shoot": {
+    "type":"ShootMulti",
+    "source":{},
+    "dest":[
+	{"type": "ShootHelix",
+	"mag": 2,//极值
+	"scl": 6,//最小正周期
+	},
+    {
+	"shots":2,
+	"shotDelay":3,
+	"type":"ShootAlternate",
+	"barrels":2,
+	"spread":15}
+	]},
+    

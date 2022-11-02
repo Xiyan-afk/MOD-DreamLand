@@ -1,0 +1,10 @@
+"name":"[#FFFFFF]牛奶"
+"description":"[#FFFFFF]冰冷的玩意，比萌萌的脸还冰(萌萌的脸-114514度)"
+"temperature":-800
+"viscosity":0
+"flammability":0
+"explosiveness":0
+"heatCapacity":19
+"effect":"overdrive" //靠近液体时，触发的效果。
+"color":"#FFFFFF"
+"research":"泡泡制造机",

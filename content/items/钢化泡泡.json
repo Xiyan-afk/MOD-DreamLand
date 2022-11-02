@@ -1,0 +1,9 @@
+{
+"type":"material"
+"name":"[#ffccff]钢化泡泡"
+"description":"比普通泡泡硬俩倍不止"
+"color": "#ffccff"
+"cost": 1.0,
+"description":"EMC：900000"
+	"research":"泡泡制造机"
+}

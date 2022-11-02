@@ -1,0 +1,32 @@
+{
+  "type":"Pump",
+  "name":"泡泡泵",
+  "description":"泡泡做的泵",
+  "health":90,
+  "outputsLiquid":true,
+  "liquidCapacity":500,
+  "size":2,
+  "hasPower":true,
+  "hasLiquids":true,
+  "pumpAmount":78,
+  "floating":true,
+  "drawLiquidLight":true,
+  "consumes":{
+    "power":0.8,
+  }
+  "requirements":[
+  {"item":"copper","amount":200}
+  {"item":"泡泡","amount":150}
+  {"item":"metaglass","amount":120}
+  ],
+  "category":"liquid",
+  "research":"泡泡制造机",
+  "rebuildable":true,
+  "insulated":true,
+  "baseExplosiveness":100,
+  "canOverdrive":true,
+  "targetable":true,
+  "breakSound":"fire",
+  "solid":true,
+  "buildCostMultiplier":0.2,
+}

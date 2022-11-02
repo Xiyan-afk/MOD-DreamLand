@@ -1,0 +1,45 @@
+{
+	"type":"RepairTurret",
+	"name":"泡泡修复塔",
+	"description":"使用进行远距离修复单位",
+	"health": 640,
+	"size": 1,
+	"range":180
+	"hasItems":false,
+	"hasPower":true,
+	"hasLiquids":false,
+	"powerUse": 1.8,
+	"repairSpeed": 30,
+	"repairRadius": 200,
+	"craftEffect":"shockwave",
+	"updateEffect":"shockwave",
+	"consumes": {
+		"power": 0.8},
+	"requirements": [
+		{ "item": "graphite", "amount":15},
+		{"item": "lead","amount":60},
+		{"item": "泡泡","amount":50}
+	],
+	"category": "units",
+	"research": "泡泡制造机",
+	"laserColor":"FFE3FF"
+	"lightColor":"ffccff"
+}
+
+
+/*        repairTurret = new RepairTurret("repair-turret"){{
+            requirements(Category.units, with(Items.silicon, 90, Items.thorium, 80, Items.plastanium, 60));
+            size = 2;
+            length = 6f;
+            repairSpeed = 3f;
+            repairRadius = 145f;
+            powerUse = 5f;
+            beamWidth = 1.1f;
+            pulseRadius = 6.1f;
+            coolantUse = 0.16f;
+            coolantMultiplier = 1.6f;
+            acceptCoolant = true;
+        }};
+
+        //endregion
+        //region units - erekir

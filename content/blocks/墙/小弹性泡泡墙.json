@@ -1,0 +1,22 @@
+{
+  "type":"Wall",
+  "name":"小弹性泡泡墙",
+  "description":"[#ffccff]泡泡是有弹性的哦",
+  "hitTime":1,
+  "deflect":true
+  "chanceDeflect":76
+  "flashWhite":true
+  "maxDamageDeflect":1500
+  "health":4000,
+  "size":1
+  "flashHit":true
+  "flashColor":"#ffccff"
+  "absorbLasers":true
+  "requirements":[
+  {"item":"钢化泡泡","amount":26}
+  {"item":"泡泡","amount":45}
+  ],
+  "category":"defense",
+  "research":"泡泡制造机",
+  "buildCostMultiplier":1,
+}

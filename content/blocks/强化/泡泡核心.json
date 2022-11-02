@@ -1,0 +1,22 @@
+{
+	"type": "CoreBlock",
+	"name": "泡泡核心",
+	"description": "存储容量160000，增加256个单位上限",
+	"itemCapacity":160000,
+	"hasItems": true,
+	"health": 6800,
+	"unitType":"mega"
+	"unitCapModifier":256,
+	"size": 6,
+	"breakable":true,
+	"requirements": [
+	    {"item": "泡泡", "amount": 4000}
+	    {"item": "钢化泡泡", "amount": 2400}
+	    
+	    
+	    ],
+	"category": "effect",
+	"research":"core-nucleus"
+	"coreColor":"ffccff"
+	"lightColor":"ffccff"
+}

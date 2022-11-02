@@ -1,0 +1,128 @@
+{
+	"type":"ItemTurret",
+	"name":"崩坏",
+	"description":"毁灭世界之力",
+	"size":3,
+	"health":2100,
+	"range":600,
+	"rotateSpeed":999
+	"recoil":22,//后坐力,
+	"reload":60,
+	"requirements":[
+	    { "item": "泡泡水晶", "amount": 500 }
+		{ "item": "泡泡", "amount": 800 }
+		{ "item": "lead", "amount": 1000 }
+		{ "item": "surge-alloy", "amount": 650 }],
+	"category":"turret",
+	"research": "泡泡制造机",
+	"reloadTime":240,
+	"restitution":0.03,//后座回复
+	"ammoUseEffect":"casing3Double",
+	"recoilAmount":10,//反冲量
+	"cooldown":180,
+	"shootShake":8,
+	"shots":1,
+	"shootCone":2.4,
+	"shootSound":"shootBig",
+	"ammoTypes":{
+	    	   /* "泡泡水晶":{
+        	"type":"PointBulletType",
+            "shootEffect":"instShoot",
+        	"hitEffect":"instHit",
+        	"smokeEffect":"smokeCloud",
+        	"trailEffect":"instTrail",
+        	"despawnEffect":"instBomb",
+        	"trailSpacing":20,
+         	"damage":2250,
+        	"tileDamageMultiplier":1.5,
+         	"speed":350,
+        	"hitShake":10,
+        	"ammoMultiplier":1,
+        	"splashDamage":2250,//范围伤害
+        	"splashDamageRadius":30,//范围
+        	"lightningDamage":1400,//闪电部分
+        	"lightning":28,
+        	"lightningLength":120,
+        	"lightningColor":"#ffccff"//到这
+        	"status":"burning",//效果
+        	"statusDuration":60,
+        	"knockback":11.1
+        	"drag":1,//减速倍率
+        	"puddleSize":11,
+        	"homingPower": 1,
+            "homingRange": 600
+        	"fragBullets":5,
+        	"fragBullet":{
+        	"type":"PointBulletType",
+            "shootEffect":"instShoot",
+        	"hitEffect":"instHit",
+        	"smokeEffect":"smokeCloud",
+        	"trailEffect":"instTrail",
+        	"despawnEffect":"instBomb",
+        	"trailSpacing":20,
+         	"damage":500,
+        	"tileDamageMultiplier":1.5,
+         	"speed":50
+	        }
+	    	    }*/
+	    	    "钢化泡泡":{
+        	"type":"PointBulletType",
+            "shootEffect":"instShoot",
+        	"hitEffect":"instHit",
+        	"smokeEffect":"smokeCloud",
+        	"trailEffect":"instTrail",
+            "despawnEffect":"instBomb",
+            "backColor":"ffccff",
+            "frontColor":"ffccff",
+		    "heatColor":"ffccff",
+		    "trailColor":"ffccff",
+        	"trailSpacing":20,
+         	"damage":2250,
+        	"tileDamageMultiplier":1.9,
+         	"speed":180,
+        	"hitShake":18,
+        	"ammoMultiplier":1
+	    }
+	    "泡泡水晶":{
+        	"type":"PointBulletType",
+            "shootEffect":"instShoot",
+        	"hitEffect":"instHit",
+        	"smokeEffect":"smokeCloud",
+        	"trailEffect":"instTrail",
+            "despawnEffect":"instBomb",
+            "backColor":"ffccff",
+            "frontColor":"ffccff",
+		    "heatColor":"ffccff",
+		    "trailColor":"ffccff",
+        	"trailSpacing":20,
+         	"damage":2250,
+        	"tileDamageMultiplier":1.9,
+         	"speed":240,
+        	"hitShake":20,
+        	"ammoMultiplier":1
+        	"splashDamage":2250,//范围伤害
+        	"splashDamageRadius":30,//范围
+        	"lightningDamage":1400,//闪电部分
+        	"lightning":28,//数量
+        	"lightningLength":120,//长度
+        	"lightningColor":"#ffccff"//颜色
+        	"fragBullets":5,//分裂部分 数量
+        	"fragBullet":{
+        	"type":"PointBulletType",
+            "shootEffect":"instShoot",
+        	"hitEffect":"instHit",
+        	"smokeEffect":"smokeCloud",
+        	"trailEffect":"instTrail",
+        	"despawnEffect":"titanExplosion",
+        	"trailSpacing":20,
+         	"damage":500,
+        	"tileDamageMultiplier":1.5,
+         	"speed":50
+	        }
+	    }
+	},
+	"coolantMultiplier":18
+}
+/*
+titanExplosion
+dynamicSpikes

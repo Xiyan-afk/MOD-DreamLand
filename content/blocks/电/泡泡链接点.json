@@ -1,0 +1,22 @@
+{
+    "type":"PowerNode",
+    "name":"泡泡链接点",
+    "health":20,
+    "buildCostMultiplier":0.4
+    "maxNodes":40,
+    "laserRange":30,
+    "consumesPower": true,
+	"outputsPower": true,
+	"consumes":{
+	    "powerBuffered": 2000
+	    },
+    "floating":true
+	"requirements": [
+	{ "item": "lead", "amount": 10}
+	{"item":"copper","amount":10}
+	{"item":"泡泡","amount":2}
+	]
+"category":"power",
+"research": "泡泡制造机"
+"lightColor":"ffccff"
+  }

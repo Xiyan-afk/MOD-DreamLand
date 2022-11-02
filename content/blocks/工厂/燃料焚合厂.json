@@ -1,0 +1,81 @@
+{
+	"type": "GenericCrafter",
+	"name": "燃料泡泡合成厂",
+	"description": "用具有高辐射物质的物品制作高级燃料",
+	"outputItem": { "item": "超级燃料", "amount": 1},
+	"size": 3,
+	"hasPower": false,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 100,
+	"updateEffect":[
+            	{//钍
+                "type":"WaveEffect",//波
+                "lifetime":30,
+                "colorFrom":"f9a3c7",
+                "colorTo":"f9a3c7",
+                "sizeFrom":0,
+                "sizeTo":8,
+                "strokeFrom":2,
+                "strokeTo":0
+            	}
+            	{//煤
+                "type":"WaveEffect",//波
+                "lifetime":30,
+                "colorFrom":"272727",
+                "colorTo":"272727",
+                "sizeFrom":0,
+                "sizeTo":8,
+                "strokeFrom":2,
+                "strokeTo":0
+            	}
+            	{//袍子
+                "type":"WaveEffect",//波
+                "lifetime":30,
+                "colorFrom":"7457ce",
+                "colorTo":"7457ce",
+                "sizeFrom":0,
+                "sizeTo":8,
+                "strokeFrom":2,
+                "strokeTo":0
+            	}
+                {
+                 "type": "ParticleEffect",//烟雾
+                 "particles": 2,//特效数量
+                 "sizeFrom": 4,//初始大小，8为一格
+                 "sizeTo": 0,//结束大小
+                 "length": 20,//扩散移动距离，负数会聚集
+                 "baseLength": 20,//开始时距离中心位置的范围
+                 "lifetime": 20,//存在时间
+                 "colorFrom": "B20000",
+                 "colorTo": "ffccff",
+                 "cone": 360//扩散角度
+                    
+                }],
+    
+	"consumes": {
+        "power":15
+        "items": {
+		"items": [
+				{ "item": "coal", "amount": 2 }
+				{ "item": "spore-pod", "amount": 1 }
+				{ "item": "thorium", "amount": 1 }
+			                                       ]
+                                                 },
+        "liquid": {
+        "liquid": "泡泡液","amount": 2},
+ },
+      	"requirements": [
+		{ "item": "泡泡", "amount": 250 }
+		{ "item": "钢化泡泡", "amount": 175}
+		{ "item":"copper","amount": 200 }
+		{ "item":"lead","amount": 200 },
+	],
+	"category": "crafting",
+	"research": "泡泡制造机",
+	"idleSound": "respawning",
+	"idleSoundVolume": 0.5
+     "alwaysUnlocked":false
+     "flameColor":"ff0000",
+     "lightColor":"ff0000"
+}

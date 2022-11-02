@@ -1,0 +1,14 @@
+{
+	"name": "[#ffccff]泡了个泡",
+	"description": "[#ffccff]利用动力产生电力，每次点击都会增加电力产出",
+	"health": 120,
+	"size": 2,
+	"requirements": [
+{"item":"copper","amount":200},
+{"item":"lead","amount":180},
+{"item":"泡泡","amount":60}
+	],
+	"category": "power",
+	"research": "泡泡制造机"
+	"alwaysUnlocked": true,
+}

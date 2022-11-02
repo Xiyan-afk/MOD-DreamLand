@@ -1,0 +1,76 @@
+"abilities": [
+    {
+    "type": "UnitSpawnAbility"
+    "unit": "military"
+    "spawnX": 0
+    "spawnY": 0
+    "spawnTime": 1200
+}
+{
+    "type": "StatusFieldAbility"
+    "duration": 300
+    "reload": 3000
+    "range": 10
+    "effect": {
+      "name": "Transcendence1"
+      "localizedName": "Transcendence1"
+      "speedMultiplier": 4
+      "healthMultiplier": 4
+      "damageMultiplier": 2
+      "damage": -10000
+       "effect": {
+      "type": "MultiEffect",
+	    "lifetime": 80,
+	    "effects": [
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 80,
+        "sizeFrom": 40,
+        "sizeTo": 40,
+        "strokeFrom": 0,
+        "strokeTo": 6,
+        "colorFrom": "FFFFFFFF",
+        "colorTo": "ffffffff"
+	   },
+	   {     
+        "type": "WaveEffect",
+        "lifetime": 80,
+        "sizeFrom": 160,
+        "sizeTo": 160,
+        "strokeFrom": 0,
+        "strokeTo": 6,
+        "colorFrom": "FFFFFFFF",
+        "colorTo": "ffffffff"
+	   },
+       {     
+        "type": "WaveEffect",
+        "lifetime": 80,
+        "sizeFrom": 0,
+        "sizeTo": 160,
+        "strokeFrom": 0,
+        "strokeTo": 6,
+        "colorFrom": "FFFFFFFF",
+        "colorTo": "ffffffff"
+	   },
+	   {     
+    "type": "ParticleEffect",
+    "particles": 20,
+    "sizeFrom": 5,
+    "sizeTo": 0,
+    "length": -90,
+    "baseLength": 90,
+    "lifetime": 80,
+    "colorFrom": "ffffffff",
+    "colorTo": "FFFFFFFF",
+    "cone": 360
+	   }
+	   ]
+       }
+       }
+       }
+]
+
+"trailChance": -1//我甚至还放了拖尾
+		"trailWidth": 3
+		"trailLength": 18
+	    "trailColor": "B8DDFFD7"

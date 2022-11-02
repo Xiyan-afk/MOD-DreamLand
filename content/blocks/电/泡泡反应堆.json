@@ -1,0 +1,29 @@
+"type": "ImpactReactor",
+"name":"泡泡反应堆"
+"description":"利用泡泡高速碰撞发电，但是需要大量电启动"
+"size":4
+"health":1020
+"liquidCapacity":50
+"hasLiquids": true
+"liquidBoostIntensity":50
+"powerProduction":1600
+"consumes": {
+  "power":18
+  "liquid":{
+    "liquid":"泡泡液"
+    "amount":"2"
+    "booster":false
+  }
+  "items": {
+    "items": [
+    { "item": "泡泡", "amount": "2"}
+    ],
+  }
+},
+"requirements": [
+{"item": "泡泡", "amount": 600}
+{"item": "graphite", "amount": 400}
+{"item": "copper", "amount": 700}
+],
+"category": "power",
+"research":"泡泡制造机"

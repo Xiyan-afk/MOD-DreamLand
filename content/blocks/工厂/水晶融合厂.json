@@ -1,0 +1,62 @@
+{
+	"type": "GenericCrafter",
+	"name": "水晶融合厂",
+	"description": "用高温融化泡泡和钢化泡泡然后重铸",
+	"outputItem": { "item": "泡泡水晶", "amount": 1},
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"itemCapacity":32
+	"craftTime": 120,
+	"updateEffect":{
+    "effects": [//特效
+      "mineImpact",
+      "drillSteam",
+      {
+        "effect": "dynamicSpikes",
+        "rotation": 30,
+        "color": "ffccff",
+        "type": "WrapEffect"
+      },
+      {
+        "color": "ffccff",
+        "rotation": 45,
+        "effect": "mineImpactWave",
+        "type": "WrapEffect"
+      }
+      ],
+    "type": "MultiEffect"
+      },//这
+      
+	"consumes": {
+	"power":20
+  "items": {
+		"items": [
+				{ "item": "钢化泡泡", "amount": 8 }
+				{ "item": "泡泡","amount":16}
+				{ "item": "超级燃料", "amount": 4 }
+			]
+    }
+      "liquid": {
+        "liquid": "泡泡液",
+        "amount": 5},
+    }
+	"requirements": [
+		{ "item": "泡泡", "amount": 1800 }
+		{ "item": "钢化泡泡", "amount": 1450 }
+		{ "item":"surge-alloy","amount": 600 }
+		{ "item":"titanium","amount": 1000 }
+		{ "item":"thorium","amount": 1000 }
+		{ "item":"plastanium","amount": 1200}
+		{ "item":"phase-fabric","amount": 600 },
+	
+	],
+	"category": "crafting",
+    "research":"泡泡制造机",
+	"idleSound": "respawning",
+	"idleSoundVolume":1
+     "alwaysUnlocked":false
+     "flameColor":"ffccff",
+     "lightColor":"ffccff"
+}

@@ -1,0 +1,18 @@
+{
+	"name": "大泡泡墙",
+	"type": "Wall",
+	"health": 9060,
+	"size": 2,
+"flashHit":true
+  "flashColor":"#ffccff"
+  "lightningChance":0.35
+  "lightningDamage":50
+  "lightningLength":12
+  "lightningColor":"#ffccff"
+  "absorbLasers":true
+	"requirements": [
+		{ "item": "泡泡", "amount": 40 }
+	],
+	"category": "defense",
+	"research": "泡泡制造机"
+}

@@ -1,0 +1,14 @@
+"type": "material"
+"name":"牛奶结晶"
+"description":"坚硬润滑"
+"radioactivity":0
+"tier":3
+"cost":1.0
+"barcolor":"#FFFFFF"
+"color":"#FFFFFF"
+"temperature":-270
+"heatCapacity":27
+"viscosity":0.1
+"hardness":4
+	"research":"泡泡制造机"
+//

@@ -1,0 +1,21 @@
+{
+	"type": "SolidPump",
+	"name": "泡泡抽水机",
+	"description": "用泡泡内的空腔装水，然后再破掉",
+	"pumpAmount":5,
+	"result":"water",
+	"health":150,
+	"size":2,
+	"rotatespeed":20,
+	"hasPower":true,
+	"hasLiquids":true,
+	"updateEffect":"smeltsmoke",
+	"requirements":[
+		{ "item":"泡泡","amount": 160 }
+		{"item":"metaglass","amount":60}
+		{"item":"graphite","amount":80}
+	],
+	"category":"production",
+	"research":"泡泡制造机",
+	"attribute":"water"
+}

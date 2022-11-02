@@ -1,0 +1,18 @@
+{
+  "type":"Floor",
+  "name":"泡泡水",
+  "placeableOn":true,
+  "floating":true
+  "variants":0.1,
+  "speedMultiplier":6,
+  "dragMultiplier":0.0,
+  "damageTaken":0,
+  "drownTime":90000,
+  "walkEffect":"ripple",
+  "drownUpdateEffect":"bubble",
+  "status":"overdrive",
+  "statusDuration":600,
+  "liquidDrop":"泡泡液",
+  "isLiquid":true,
+  "attributes":{"array":[1050,105,250,350]},
+}

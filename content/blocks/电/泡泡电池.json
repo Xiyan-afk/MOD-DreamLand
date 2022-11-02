@@ -1,0 +1,14 @@
+{
+	"type": "battery",
+	"name": "泡泡电池",
+	"description": "泡泡怎么存电是个问题 "
+	"size": 2,
+	"health": 500,
+	"requirements": [
+		{"item": "泡泡", "amount": 100}
+		{"item": "silicon", "amount": 100}
+	],
+	"consumes": { "powerBuffered": 100000000 }
+  "category":"power",
+  "research": "泡泡制造机"
+}

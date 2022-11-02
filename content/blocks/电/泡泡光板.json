@@ -1,0 +1,13 @@
+"type": "SolarGenerator",
+"name":"泡泡光板"
+"description":"用泡泡做太阳能板?"
+"size":1
+"health":140
+"powerProduction":7
+"requirements": [
+{"item": "泡泡", "amount":"20" }
+{"item": "silicon", "amount": 100},
+],
+"category": "power",
+"research": "泡泡制造机"
+"alwaysUnlocked": true,

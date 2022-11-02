@@ -1,0 +1,11 @@
+"type": "SolarGenerator",
+"name":"电磁墙"
+"description":"可以发电的墙，但是牺牲了防御力"
+"size":1
+"health":600
+"powerProduction":5.2
+"requirements": [
+{"item": "泡泡", "amount":"35" },
+],
+"category": "defense",
+"research": "泡泡制造机"

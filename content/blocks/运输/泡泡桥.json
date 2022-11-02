@@ -1,0 +1,27 @@
+{
+  "type":"ItemBridge",
+  "name":"泡泡物品桥",
+  "description":"用透明的泡泡做的",
+  "health":60,
+  "size":1,
+  "floating":true
+  "requirements":[
+  {"item":"lead","amount":4}
+  {"item":"copper","amount":4}
+  {"item":"graphite","amount":4}
+  ],
+  "category":"distribution",
+  "research":"泡泡制造机",
+  "rebuildable":true,
+  "insulated":true,
+  "baseExplosiveness":10000,
+  "targetable":true,
+  "breakSound":"fire",
+  "solid":true,
+  "buildCostMultiplier":0.0003,
+  "range":10,
+  "transportTime":0.5,
+  "itemCapacity":16,
+  "alwaysUnlocked": true,
+  "lightColor":"ffccff"
+}

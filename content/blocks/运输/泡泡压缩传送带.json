@@ -1,0 +1,16 @@
+{
+	"type":"StackConveyor",
+	"name":"泡泡压缩带",
+	"description":"把物品压缩成12倍",
+	"requirements": [
+	    { "item":"plastanium","amount": 1 }
+	    {"item": "泡泡", "amount": 6}
+	],
+	"category":"distribution",
+	"research": "泡泡制造机",
+	"speed":0.7,
+	"itemCapacity":12,
+	"hasItems": true,
+	"health":80,
+	"size":1
+}

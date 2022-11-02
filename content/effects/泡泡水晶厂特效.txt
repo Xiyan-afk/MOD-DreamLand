@@ -1,0 +1,19 @@
+{
+    "effects": [
+      "mineImpact",
+      "drillSteam",
+      {
+        "effect": "dynamicSpikes",
+        "rotation": 30,
+        "color": "ffccff",
+        "type": "WrapEffect"
+      },
+      {
+        "color": "ffccff",
+        "rotation": 45,
+        "effect": "mineImpactWave",
+        "type": "WrapEffect"
+      }
+    ],
+    "type": "MultiEffect"
+}

@@ -1,0 +1,24 @@
+{
+	"type": "Reconstructor",
+	"name": "T2泡泡构建台",
+	"description": "建造时间大幅度减少",
+    "health":160,
+	"size":3,
+	"consumes":{
+		"power":18
+	},
+	"upgrades":[
+		["nova","pulsar"],
+		["dagger","mace"],
+		["crawler","atrax"],
+		["flare","horizon"],
+		["mono","poly"],
+		["risso","minke"]
+		["retusa","oxynoe"]
+    ],
+	"constructTime":180,
+	"requirements": [{"item": "泡泡", "amount": 600}],
+	"category":"units",
+	"buildVisibility":"shown",
+	"research":"1泡泡单位升级工厂"
+}

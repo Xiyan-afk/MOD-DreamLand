@@ -1,0 +1,27 @@
+{
+	"type": "Reconstructor",
+	"name": "T3泡泡重构台",
+	"description": "建造时间大幅度减少",
+    "health":320,
+	"size":5,
+	"consumes":{
+		"power":60
+	},
+	"upgrades":[
+		["horizon","zenith"],
+        ["mace","fortress"],
+        ["poly","mega"],
+        ["minke","bryde"],
+        ["pulsar","quasar"],
+        ["atrax","spiroct"],
+        ["oxynoe","cyerce"]
+    ],
+	"constructTime":200,
+	"requirements": [
+	    {"item": "泡泡", "amount": 850}
+	    {"item":"钢化泡泡","amount":400}
+	],
+	"category":"units",
+	"buildVisibility":"shown",
+	"research":"2泡泡单位升级工厂"
+}

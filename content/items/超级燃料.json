@@ -1,0 +1,12 @@
+{
+"type":"material"
+"name":"辐赦泡泡"
+"description":"温度超级高"
+"color": "#490808FF"
+"cost": 1.0,
+"description":"15^100+1°C"
+"explosiveness":999999999999999
+"radioactivity":999999999999999
+"flammability":999999999999999
+	"research":"泡泡制造机"
+}

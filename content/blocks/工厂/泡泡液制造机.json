@@ -1,0 +1,40 @@
+{
+  "type":"GenericCrafter",
+  "name":"泡泡融化机",
+  "description":"利用高温融化泡泡获得非常滑的泡泡液",
+  "health":260,
+  "liquidCapacity":500,
+  "itemCapacity":500,
+  "size":2,
+  "hasPower":true,
+  "hasLiquids":true,
+  "hasItems":true,
+  "craftTime":1,
+  "consumes":{
+      "power":3,
+      "items":{
+      "items":[
+               {"item":"泡泡","amount":2}
+               {"item":"coal","amount":4}
+              ],
+    }
+    },
+  "outputLiquid":
+                 {"liquid":"泡泡液","amount":10},
+  "requirements":[
+                 {"item":"泡泡","amount":200}
+                 { "item":"metaglass","amount": 40 }
+  ],
+  "category":"crafting",
+  "research":"泡泡制造机",
+  "rebuildable":true,
+  "insulated":true,
+  "baseExplosiveness":10000,
+  "flameColor":"ffccff",
+  "canOverdrive":true,
+  "targetable":true,
+  "breakSound":"fire",
+  "solid":true,
+  "buildCostMultiplier":1,
+  "lightColor":"ffccff",
+}

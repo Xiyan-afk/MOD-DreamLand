@@ -1,0 +1,14 @@
+{
+	"type":"Unloader",
+	"name":"泡泡卸载器",
+	"description":"利用真空泡泡抽取物资",
+	"speed":0.00001,
+	"requirements":[
+		{"item":"泡泡","amount":30},
+		{"item":"silicon","amount":30},
+	],
+	"category":"effect",
+	"research": "泡泡制造机",
+	"alwaysUnlocked":true
+	"alwaysUnlocked": true,
+}//模板来自濒临

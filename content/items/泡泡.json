@@ -1,0 +1,10 @@
+{
+"type":"material"
+"name":"泡泡"
+"description":"一戳就破"
+"color": "#ffccff"
+"cost": 1.0,
+"description":"EMC：600"
+	"research":"泡泡制造机"
+	"alwaysUnlocked": true,
+}

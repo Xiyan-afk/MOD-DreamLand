@@ -1,0 +1,10 @@
+"name":"[#ffccff]泡泡液"
+"description":"[#ffccff]用来吹泡泡，温度比牛奶还低，真是神奇的定理"
+"temperature":-1200
+"viscosity":0
+"flammability":0
+"explosiveness":0
+"heatCapacity":19
+"effect":"overdrive" //靠近液体时，触发的效果。
+"color":"#ffccff"
+"research":"泡泡制造机",
