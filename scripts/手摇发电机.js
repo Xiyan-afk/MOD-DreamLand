@@ -1,23 +1,29 @@
 
-let 手摇发电机 = extend(SolarGenerator, '手摇发电机', {
-	setBars(){
-		//this.bars.add('poweroutput', new Func(){get:entity => new Bar(prov(() => Core.bundle.format("bar.poweroutput", (entity.getPowerProduction() * 60 * entity.timeScale() + '').replace(/(?<=\.\d)\d*/g, ''))), prov(() => Pal.powerBar), new Floatp(){get:() => 1.0})});
-	}
+const 手摇发电机 = extend(SolarGenerator, '手摇发电机', {
+/*    setBars(){
+        this.super$setBars();
+        this.bars.add("Power", func(entity => {
+            var bar = new Bar(prov(() => Core.bundle.get("bar.power")), prov(() => pal.power), floatp(() => entity.getPowerProduction()));
+            return bar;
+        }));
+    },*/
 });
 手摇发电机.localizedName = '手摇发电机';
 手摇发电机.buildVisibility = BuildVisibility.shown;
 手摇发电机.category = Category.power;
 手摇发电机.update = 手摇发电机.configurable = 手摇发电机.hasPower = true;
-手摇发电机.powerProduction = 30;//电量上限，1:60
-手摇发电机.buildType = prov(() => extend(Building, {
-	productionEfficiency:0,
+手摇发电机.powerProduction = 5;//电量上限，1:60
+手摇发电机.buildType = prov(() => {
+    var productionEfficiency = 0
+    const max = 300;
+    return new JavaAdapter(SolarGenerator.SolarGeneratorBuild, {
 	update(){
-		if(this.productionEfficiency > 0) this.productionEfficiency -= 2; // 每帧减少的量
+		if(this.productionEfficiency > 0) this.productionEfficiency -= 0.2; // 每帧减少的量
 	},
 	buildConfiguration(table){
-		table.button(Icon.upOpen, Styles.clearTransi, run(() => {
-			if(this.productionEfficiency <= 0 ) this.productionEfficiency += 5; // 每下增加的量
-		})).size(80);
+		table.button(Icon.upOpen, Styles.defaulti, run(() => {
+			if(this.productionEfficiency < max) this.productionEfficiency += 0.5; // 每下增加的量
+		})).size(45);
 	},
 	getPowerProduction(){
 		return this.productionEfficiency;
@@ -30,4 +36,9 @@ let 手摇发电机 = extend(SolarGenerator, '手摇发电机', {
 		this.super$read(read, revision);
 		this.productionEfficiency = read.f();
 	}
-}));
+},手摇发电机);
+});
+
+
+
+
