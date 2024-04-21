@@ -1,5 +1,4 @@
 {
-	"type": "ImpactReactor",
 	"name": "[#ffccff]泡了个泡",
 	"description": "[#ffccff]利用动力产生电力，每次点击都会增加电力产出",
 	"health": 120,
