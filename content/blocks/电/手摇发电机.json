@@ -8,6 +8,23 @@
 {"item":"lead","amount":180},
 {"item":"泡泡","amount":60}
 	],
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-rotator",
+				"rotateSpeed": 1,
+				"layer": 80
+			},
+			{
+				"type": "DrawRegion",
+				"suffix": "-top",
+				"layer": 81
+			},
+			"DrawDefault"
+		]
+	},
 	"category": "power",
 	"research": "泡泡制造机"
 	"alwaysUnlocked": true,
