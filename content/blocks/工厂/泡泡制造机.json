@@ -33,7 +33,7 @@
 		{
 			"color": "ffccff",
 			"rotation": 55,
-			"effect": "bubble",
+			"effect": "airBubble",
 			"type": "WrapEffect"
 		}
 	],

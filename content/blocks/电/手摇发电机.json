@@ -13,18 +13,23 @@
 		"drawers": [
 			{
 				"type": "DrawRegion",
-				"suffix": "-rotator",
-				"rotateSpeed": 1,
-				"layer": 80
+				"suffix": "-bottom"
 			},
 			{
-				"type": "DrawRegion",
-				"suffix": "-top",
-				"layer": 81
+				"type":"DrawPlasma"
+				"suffix":"-plasma-"
+			}
+			{
+				"type":"DrawRegion",
+				"suffix":"-转"
+				"rotateSpeed":5
+				"spinSprite": true,
 			},
-			"DrawDefault"
+			"DrawDefault",
+
 		]
 	},
+}
 	"category": "power",
 	"research": "泡泡制造机"
 	"alwaysUnlocked": true,
