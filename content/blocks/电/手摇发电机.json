@@ -19,7 +19,6 @@
 			{
 				"type":"DrawPlasma"
 				"suffix":"-plasma-",
-				"color": "ffccff",
 			}
 			{
 				"type": "DrawGlowRegion",
