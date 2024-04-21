@@ -1,4 +1,5 @@
 {
+	"type": "ImpactReactor",
 	"name": "[#ffccff]泡了个泡",
 	"description": "[#ffccff]利用动力产生电力，每次点击都会增加电力产出",
 	"health": 120,
@@ -19,8 +20,17 @@
 				"type":"DrawPlasma"
 				"suffix":"-plasma-",
 				"color": "ffccff",
-				"layer": 81
 			}
+			{
+				"type": "DrawGlowRegion",
+				"color": "ffccff"
+			},
+			{
+				"type":"DrawRegion",
+				"suffix":"-rotator"
+				"rotateSpeed":5
+				"spinSprite": true,
+			},
 			"DrawDefault",
 
 		]
