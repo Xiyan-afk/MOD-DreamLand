@@ -28,6 +28,7 @@
 	"craftTime": 50,
 	
 	//这里是特效部分 是自定义的，所以看不懂很正常     详情见例子特效
+	"updateEffect":{
 	"effects": [//特效
 		{
 			"color": "ffccff",
