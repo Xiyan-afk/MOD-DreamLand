@@ -17,14 +17,10 @@
 			},
 			{
 				"type":"DrawPlasma"
-				"suffix":"-plasma-"
+				"suffix":"-plasma-",
+				"color": "ffccff",
+				"layer": 81
 			}
-			{
-				"type":"DrawRegion",
-				"suffix":"-转"
-				"rotateSpeed":5
-				"spinSprite": true,
-			},
 			"DrawDefault",
 
 		]
