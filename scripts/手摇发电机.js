@@ -18,12 +18,12 @@ const 手摇发电机 = extend(SolarGenerator, '手摇发电机', {
     const max = 3000;
     return new JavaAdapter(SolarGenerator.SolarGeneratorBuild, {
 	update(){
-		if(this.productionEfficiency > 0) this.productionEfficiency -= 0.0001; // 每帧减少的量
+		if(this.productionEfficiency > 0) this.productionEfficiency -= 0.001; // 每帧减少的量
 	},
 	buildConfiguration(table){
 		table.button(Icon.upOpen, Styles.defaulti, run(() => {
-			if(this.productionEfficiency < max) this.productionEfficiency += 1; // 每下增加的量
-		})).size(100);
+			if(this.productionEfficiency < max) this.productionEfficiency += 0.5; // 每下增加的量
+		})).size(80);
 	},
 	getPowerProduction(){
 		return this.productionEfficiency;
