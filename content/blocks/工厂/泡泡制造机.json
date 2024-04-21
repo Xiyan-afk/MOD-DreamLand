@@ -28,27 +28,16 @@
 	"craftTime": 50,
 	
 	//这里是特效部分 是自定义的，所以看不懂很正常     详情见例子特效
-	"updateEffect":[
-	{//铜
-                "type":"WaveEffect",
-                "lifetime":35,
-                "colorFrom":"d99d73",
-                "colorTo":"ffccff",
-                "sizeFrom":0,
-                "sizeTo":10,
-                "strokeFrom":4,
-                "strokeTo":0
-	}
-	{//铅
-                "type":"WaveEffect",
-                "lifetime":35,
-                "colorFrom":"8c7fa9",
-                "colorTo":"ffccff",
-                "sizeFrom":0,
-                "sizeTo":10,
-                "strokeFrom":4,
-                "strokeTo":0
-	}],
+	"effects": [//特效
+		{
+			"color": "ffccff",
+			"rotation": 55,
+			"effect": "bubble",
+			"type": "WrapEffect"
+		}
+	],
+	"type": "MultiEffect"
+},//这
 	
 	//消耗品
 	"consumes": {
